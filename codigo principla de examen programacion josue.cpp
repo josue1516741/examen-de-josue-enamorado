@@ -37,3 +37,25 @@ system("color b0");
             printf("Bienvenido a la base de datos de josue enamorado. \n");
           cout<<"*********************************"<<endl;  
 		cout<<"*********************************"<<endl;
+		cout<< "a continuacion se le muestra un menu de opciones para trabajar"<<endl;
+		   cout<< "opcion 1 factorial de un numero"<<endl;
+		   cout<< "opcion 2 tablas de multiplicar"<<endl;
+		   cout<< "opcion 3 calculo de numero pares e impares"<<endl;
+		   cout<< "opcion 4 que dia es laboral"<<endl;
+		   cout<< "opcion 5 salir"<<endl;
+		   cout<<"*********************************"<<endl;  
+		   cout<<"*********************************"<<endl;
+		   cout<< "Ingrese la opcion que desea utilizar"<<endl;
+            cin>>op;
+            system("cls");
+            if(op==1){
+ int n,i;
+   long double factorial; // se declara long double para poder representar números grandes
+   cout << "Introduce un numero: ";
+   cin >> n;
+   factorial=1;
+   for(i=1;i<=n;i++)
+        factorial = factorial * i;
+   cout << endl << "Factorial de " << n << " -> " << factorial << endl;
+   system("pause");
+}
