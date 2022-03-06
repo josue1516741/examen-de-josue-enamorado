@@ -102,7 +102,7 @@ if(op==2){
         else
             impares += numero;
 
-        printf( "\n   Introduzca un n%cmero entero (0=Fin): ", 163 );
+        printf( "\n   Introduzca un n%cmero entero y al llegar al decimo numero escribir 0 para iniciar el programa (0=Fin): ", 163 );
         scanf( "%d", &numero );
     } 
 
@@ -111,4 +111,53 @@ if(op==2){
 
     getch(); /* Pausa */
 		  }
+		  if(op==4){
+		  int dia;
+       printf( "\n   1-lunes", 161 );
+        printf( "\n   2-martes", 161 );
+         printf( "\n   3-miercoles", 161 );
+          printf( "\n   4-jueves", 161 );
+           printf( "\n   5-viernes", 161 );
+            printf( "\n   6-sabado", 161 );
+             printf( "\n   7-domingo", 161 );
+    printf( "\n   Introduzca d%ca de la semana: ", 161 );      
+    scanf( "%d", &dia );
+
+    if ( dia >= 1 && dia <= 7 )
+
+    /* Sólo si el día es válido,
+       se ejecuta la instrucción switch */
+
+        /* Inicio del anidamiento */
+        switch ( dia )
+        {
+            case 1 : printf( "\n   Lunes dia labaoral" );
+                     break;
+            case 2 : printf( "\n   Martes dia labaora" );
+                     break;
+            case 3 : printf( "\n   Mi%crcoles dia labaora", 130 );
+                     break;
+            case 4 : printf( "\n   Jueves dia labaora" );
+                     break;
+            case 5 : printf( "\n   Viernes dia labaora" );
+                     break;
+            case 6 : printf( "\n   Sabado dia de descanso", 160 );
+                     break;
+            case 7 : printf( "\n   Domingo dia de descanso" );
+        }
+        /* Fin del anidamiento */
+
+    else
+        printf( "\n   ERROR: D%ca incorrecto.", 161 );
+
+    getch(); /* Pausa */	
+		  	
+		  	
+		  }
+		  if(op==5){
+		
+		  
+	return 0;	}  
+	}
+          
 		  
